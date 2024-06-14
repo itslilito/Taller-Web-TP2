@@ -1,0 +1,69 @@
+/* FONTS */
+
+@font-face { /* Fjalla One */
+    font-family: 'fjalla-one';
+    src: url('fuentes/FjallaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /* DM Sans */
+    font-family: 'dm-sans';
+    src: url('fuentes/DMSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /* Titillium Web */
+    font-family: 'titillium-web';
+    src: url('fuentes/TitilliumWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* HEADER */
+
+header { /* header completo */
+   background-color: #202020;
+   width: 100%;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.header-con-secciones { /* header seccionado */
+    display: flex;
+    margin-left: 100px;
+}
+
+.seccion-header { /* secciones del header */
+    margin-right: 45px;
+}
+
+[type="boton-header"] { /* boton del header */
+    font-family: fjalla-one;
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+[type="boton-header-active"] { /* boton de la pagina actual */
+    font-family: fjalla-one;
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    border: none;
+    background-color: #ff3300;
+}
+
+header button:hover { /* hover del boton */
+    background-color: #D92B00;
+}
+
+/* HTML Y BODY */
+
+html, body { /* html y body */
+    margin: 0;
+    padding: 0;
+}
