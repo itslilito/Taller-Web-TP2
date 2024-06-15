@@ -1,45 +1,25 @@
-/* FONTS */
-
-@font-face { /* Fjalla One */
-    font-family: 'fjalla-one';
-    src: url('fuentes/FjallaOne-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face { /* DM Sans */
-    font-family: 'dm-sans';
-    src: url('fuentes/DMSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face { /* Titillium Web */
-    font-family: 'titillium-web';
-    src: url('fuentes/TitilliumWeb-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* HEADER */
 
 header { /* header completo */
-   background-color: #202020;
+   background-color: #252525;
    width: 100%;
-   padding-bottom: 20px;
 }
 
 .header-con-secciones { /* header seccionado */
     display: flex;
     margin-left: 100px;
+    padding-bottom: 20px;
+    background-size: cover;
+    height: 70px;
+    transition: all 1s ease;
 }
 
 .seccion-header { /* secciones del header */
-    margin-right: 45px;
+    margin-right: 30px;
 }
 
 [type="boton-header"] { /* boton del header */
-    font-family: fjalla-one;
+    font-family: Fjalla One;
     font-size: 20px;
     color: white;
     padding: 0;
@@ -47,21 +27,127 @@ header { /* header completo */
     background: none;
     width: calc(100% + 30px);
     height: calc(100% + 20px);
+    outline: none;
 }
 
 [type="boton-header-active"] { /* boton que marca la pagina actual */
-    font-family: fjalla-one;
+    font-family: Fjalla One;
     font-size: 20px;
     color: white;
     padding: 0;
     border: none;
-    background-color: #ff3300;
+    background-color: #7728B5;
     width: calc(100% + 30px);
     height: calc(100% + 20px);
+    outline: none;
+}
+
+header button:focus { /* boton del header en focus */
+    outline: none;
 }
 
 header button:hover { /* hover del boton */
-    background-color: #D92B00;
+    background-color: #47186c;
+    outline: none;
+}
+
+.search-bar { /* div de la search bar */
+    position: relative;
+    align-items: center;
+    top: 16px;
+    margin-left: 30px;
+    display: flex;
+}
+
+.search-bar img { /* icono de la search bar */
+    height: 20px;
+    width: 20px;
+}
+
+input[type="text"] { /* search bar */
+    font-family: Titillium Web;
+    width: 270px;
+    border: none;
+    height: 30px;
+    float: left;
+    outline: none;
+    text-transform: uppercase;
+}
+
+button[type="submit"] { /* submit de la search bar */
+    width: 30px;
+    height: 30px;
+    background: grey;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-left: none;
+}
+
+/* ELEMENTOS OCULTOS DEL HEADER */
+
+.noticias-hover { /* contenido que aparece cuando haces hover a noticias */
+    background-color: red;
+    width: 100%;
+    height: 350px;
+    display: none;
+}
+
+.noticias-hover.show { /* muestra el contenido con el script */
+    display: block;
+}
+
+.titulo-hover { /* titulo de los contenidos que aparecen al hacer hover a una seccion */
+    font-family: Fjalla One;
+    font-size: 32px;
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+
+.flexcards-hover { /* division con todas las cards del hover oculto */
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-hover { /* cards del hover oculto */
+    width: 200px;
+    height: 171px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.imagen-card-hover { /* imagenes de las cards del hover oculto */
+    width: 200px;
+    height: 171px;
+}
+
+.fecha-card-hover { /* fecha de las cards del hover oculto */
+    font-family: Titillium Web;
+    background-color: #7728B5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 308px;
+}
+
+.titulo-card-hover { /* titulo de la card del hover oculto */
+    box-sizing: content-box;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+    text-align: left;
+    position: relative;
+    top: 5px;
+    font-family: Fjalla One;
+    font-size: 18px;
 }
 
 /* HTML Y BODY */
