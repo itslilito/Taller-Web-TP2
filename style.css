@@ -1,13 +1,13 @@
 /* HEADER */
 
 header { /* header completo */
-   background-color: #252525;
+   background-color: #fff;
    width: 100%;
+   border-bottom: solid black;
 }
 
 .header-con-secciones { /* header seccionado */
     display: flex;
-    margin-left: 100px;
     padding-bottom: 20px;
     background-size: cover;
     height: 70px;
@@ -18,10 +18,14 @@ header { /* header completo */
     margin-right: 30px;
 }
 
+#boton-inicio { /* boton del inicio del header */
+    margin-left: 200px;
+}
+
 [type="boton-header"] { /* boton del header */
     font-family: Fjalla One;
     font-size: 20px;
-    color: white;
+    color: black;
     padding: 0;
     border: none;
     background: none;
@@ -47,8 +51,9 @@ header button:focus { /* boton del header en focus */
 }
 
 header button:hover { /* hover del boton */
-    background-color: #47186c;
+    background-color: black;
     outline: none;
+    color: white;
 }
 
 .search-bar { /* div de la search bar */
@@ -57,6 +62,7 @@ header button:hover { /* hover del boton */
     top: 16px;
     margin-left: 30px;
     display: flex;
+    border: solid black;
 }
 
 .search-bar img { /* icono de la search bar */
@@ -87,7 +93,7 @@ button[type="submit"] { /* submit de la search bar */
 /* ELEMENTOS OCULTOS DEL HEADER */
 
 .noticias-hover { /* contenido que aparece cuando haces hover a noticias */
-    background-color: red;
+    background-color: white;
     width: 100%;
     height: 350px;
     display: none;
