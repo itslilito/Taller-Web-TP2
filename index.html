@@ -13,31 +13,27 @@
     <body>
         <header>
             <section class="header-con-secciones" id="header-section">
-                <div class="seccion-header" id="boton-inicio">
-                    <button type="boton-header-active">INICIO</button>
+                <div class="logo-header">
+                    <img class="imagen-logo-header" src="imagenes/navbar-logo.png">
                 </div>
-                <div class="seccion-header" id="boton-artistas">
-                    <button type="boton-header">ARTISTAS</button>
+                <div class="seccion-header" id="boton-inicio">
+                    <button type="boton-header">INICIO</button>
                 </div>
                 <div class="seccion-header" id="boton-noticias">
                     <button type="boton-header">NOTICIAS</button>
                 </div>
-                <div class="seccion-header" id="boton-lanzamientos">
-                    <button type="boton-header">LANZAMIENTOS</button>
-                </div>
-                <div class="seccion-header" id="boton-videos">
-                    <button type="boton-header">VIDEOS</button>
-                </div>
                 <div class="seccion-header" id="boton-agenda">
                     <button type="boton-header">AGENDA</button>
                 </div>
-                <div class="seccion-header" id="boton-extras">
-                    <button type="boton-header">EXTRAS</button>
+                <div class="seccion-header" id="boton-artistas">
+                    <button type="boton-header-active">ARTISTAS</button>
                 </div>
-                <form class="search-bar">
-                    <input type="text" placeholder="BUSCAR" name="search">
-                    <button type="submit"><img src="iconos/icono-buscador.svg"></button>
-                </form>
+                <div class="seccion-header" id="boton-exclusivos">
+                    <button type="boton-header">EXCLUSIVOS</button>
+                </div>
+                <div class="seccion-header" id="boton-busqueda">
+                    <button type="boton-header" id="boton-busqueda-hide"><img class="imagen-boton-busqueda" src="iconos/icono-buscador.svg"></button>
+                </div>
             </section>
             <section class="noticias-hover" id="id-noticias-hover">
                 <span class="titulo-hover">NOTICIAS</span>
@@ -70,37 +66,20 @@
                 </div>
             </section>
         </header>
-        <span class="titulo-agenda-inicio">AGENDA</span>
-        <section class="agenda-inicio">
-            <img class="imagengrande-agenda-inicio" src="/imagenes/inicio-agenda-miranda.jpg" alt="miranda-imagen">
-            <div class="degradeimagengrande-agenda-inicio"></div>
-            <span class="engira-agenda-inicio">DE GIRA AHORA</span>
-            <span class="loproximo-agenda-inicio">&nbsp;LO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRÓXIMO</span>
-            <div class="proximasgiras-agenda-inicio">
-                <div class="card-agenda-inicio">
-                    <img class="imagen-agenda-inicio" src="/imagenes/inicio-agenda-aurora.jpg" alt="aurora-imagen">
-                    <div class="textogira-agenda-inicio">
-                        <h1 class="fechagira-agenda-inicio">13/11</h1>
-                        <h2 class="ubicaciongira-agenda-inicio">Buenos Aires</h2>
-                    </div>
+        <section class="artistas-desplegable-searchbar">
+            <span class="artistas-titulo">ARTISTAS</span>
+            <select name="GÉNERO" class="dropdown-genero">
+                <option value="GÉNERO">GÉNERO</option>
+                <option value="ROCK">ROCK</option>
+                <option value="HIP-HOP">HIP-HOP</option>
+                <option value="POP">POP</option>
+                <div class="search-container">
+                    <input type="text" class="search-bar" placeholder="BUSCAR">
+                    <button class="search-button">
+                        <img src="iconos/icono-buscador.svg" alt="Buscar">
+                    </button>
                 </div>
-                <hr>
-                <div class="card-agenda-inicio">
-                    <img class="imagen-agenda-inicio" src="/imagenes/inicio-agenda-bringmethehorizon.jpg" alt="bmth-imagen">
-                    <div class="textogira-agenda-inicio">
-                        <h1 class="fechagira-agenda-inicio">08/12</h1>
-                        <h2 class="ubicaciongira-agenda-inicio">Buenos Aires</h2>
-                    </div>
-                </div>
-                <hr>
-                <div class="card-agenda-inicio">
-                    <img class="imagen-agenda-inicio" src="/imagenes/inicio-agenda-descendentscirclejerks.jpg" alt="descendentscirclejerks-imagen">
-                    <div class="textogira-agenda-inicio">
-                        <h1 class="fechagira-agenda-inicio">11/12</h1>
-                        <h2 class="ubicaciongira-agenda-inicio">Buenos Aires</h2>
-                    </div>
-                </div>
-            </div>
+            </select>
         </section>
         <footer>
 
