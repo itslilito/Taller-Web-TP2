@@ -119,6 +119,8 @@ header button:hover { /* hover del boton */
     width: 233px;
     left: 630px;
     position: absolute;
+    font-family: DM Sans;
+    padding-left: 15px;
 }
 
 .search-button {
@@ -133,6 +135,54 @@ header button:hover { /* hover del boton */
     right: 192px;
     position: absolute;
     width: 258px;
+    font-family: DM Sans;
+    font-size: 32px;
+    padding-left: 15px;
+}
+
+.ultimos-artistas {
+    margin-top: 90px;
+    position: absolute;
+    font-family: Fjalla One;
+    font-size: 32px;
+    color: white;
+    left: 120px;
+}
+/* cards de artistas */
+
+.wrap-cards {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.card-artista {
+    margin-top: 160px;
+    text-align: center;
+    height: 370px;
+}
+
+#segunda {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.card-artista-nombre {
+    position: relative;
+    bottom: 162px;
+    font-size: 36px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    color: white;
+}
+
+.card-artista-degrade {
+    width: 345px;
+    height: 107px;
+    position: relative;
+    bottom: 107px;
+    background: rgb(19,19,19);
+    background: linear-gradient(0deg, rgba(19,19,19,1) 0%, rgba(27,27,27,0) 100%);
 }
 /* HTML Y BODY */
  
