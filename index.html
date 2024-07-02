@@ -26,7 +26,7 @@
                     <button type="boton-header">AGENDA</button>
                 </div>
                 <div class="seccion-header" id="boton-artistas">
-                    <button type="boton-header-active">ARTISTAS</button>
+                    <a href="index.html"><button type="boton-header-active">ARTISTAS</button></a>
                 </div>
                 <div class="seccion-header" id="boton-exclusivos">
                     <button type="boton-header">EXCLUSIVOS</button>
@@ -36,73 +36,311 @@
                 </div>
             </section>
         </header>
-        <section class="artistas-desplegable-searchbar">
+        <section class="artistas-searchbar">
             <span class="artistas-titulo">ARTISTAS</span>
-            <select name="GÉNERO" class="dropdown-genero">
+                <input type="text" class="search-bar" id="Search" placeholder="BUSCAR">
+                <button class="search-button">
+                    <img src="iconos/icono-buscador.svg" alt="Buscar">
+                </button>
+        </section>
+        <section class="ult-artistas-dropdown">
+            <span class="ultimos-artistas" id="ultimos-artistas">ÚLTIMOS ARTISTAS BUSCADOS</span>
+            <span class="ultimos-artistas" id="orden-alfabetico">ORDEN ALFABETICO</span>
+            <select name="GÉNERO" class="dropdown-genero" id="Selector">
                 <option value="GÉNERO">GÉNERO</option>
                 <option value="ROCK">ROCK</option>
                 <option value="HIP-HOP">HIP-HOP</option>
                 <option value="POP">POP</option>
             </select>
-                <input type="text" class="search-bar" placeholder="BUSCAR">
-                <button class="search-button">
-                    <img src="iconos/icono-buscador.svg" alt="Buscar">
-                </button>
-        </section>
-        <span class="ultimos-artistas">ÚLTIMOS ARTISTAS BUSCADOS</span>
-        <div class="wrap-cards">
+        </section>        
+        <div class="wrap-cards-primeras" id="wrap-cards-genero1">
             <div class="card-artista" id="primera">
+                <a href="paginas de artistas/duki.html">
                 <img src="imagenes/artistas-card-duki.png" class="card-artista-imagen">
                 <div class="card-artista-degrade"></div>
                 <span class="card-artista-nombre">DUKI</span>
+                </a>
             </div>
             <div class="card-artista" id="segunda">
+                <a href="paginas de artistas/airbag.html"> 
                 <img src="imagenes/artistas-card-airbag.png" class="card-artista-imagen">
                 <div class="card-artista-degrade"></div>
                 <span class="card-artista-nombre">AIRBAG</span>
+                </a>
             </div>
             <div class="card-artista" id="tercera">
+                <a href="paginas de artistas/camilosesto.html"> 
                 <img src="imagenes/artistas-card-camilosesto.png" class="card-artista-imagen">
                 <div class="card-artista-degrade"></div>
                 <span class="card-artista-nombre">CAMILO SESTO</span>
+                </a>
             </div>
         </div>
-        <div class="wrap-cards">
+        <div class="wrap-cards" id="wrap-cards-genero2">
             <div class="card-artista" id="primera">
+                <a href="paginas de artistas/waltergiardino.html"> 
                 <img src="imagenes/artistas-card-waltergiardino.png" class="card-artista-imagen">
                 <div class="card-artista-degrade"></div>
                 <span class="card-artista-nombre">WALTER GIARDINO</span>
+                </a>
             </div>
             <div class="card-artista" id="segunda">
+                <a href="paginas de artistas/wos.html">
                 <img src="imagenes/artistas-card-wos.png" class="card-artista-imagen">
                 <div class="card-artista-degrade"></div>
                 <span class="card-artista-nombre">WOS</span>
+                </a>
             </div>
             <div class="card-artista" id="tercera">
+                <a href="paginas de artistas/elnegrotecla.html">
                 <img src="imagenes/artistas-card-elnegrotecla.png" class="card-artista-imagen">
                 <div class="card-artista-degrade"></div>
                 <span class="card-artista-nombre">EL NEGRO TECLA</span>
+                </a>
             </div>
         </div>
-        <div class="wrap-cards">
+        <div class="wrap-cards" id="wrap-cards-genero3">
             <div class="card-artista" id="primera">
+                <a href="paginas de artistas/intoxicados.html">
                 <img src="imagenes/artistas-card-intoxicados.png" class="card-artista-imagen">
                 <div class="card-artista-degrade"></div>
                 <span class="card-artista-nombre">INTOXICADOS</span>
+                </a>
             </div>
             <div class="card-artista" id="segunda">
+                <a href="paginas de artistas/márama.html">
                 <img src="imagenes/artistas-card-márama.png" class="card-artista-imagen">
                 <div class="card-artista-degrade"></div>
                 <span class="card-artista-nombre">MÁRAMA</span>
+                </a>
             </div>
             <div class="card-artista" id="tercera">
+                <a href="paginas de artistas/miranda!.html">
                 <img src="imagenes/artistas-card-miranda!.png" class="card-artista-imagen">
                 <div class="card-artista-degrade"></div>
                 <span class="card-artista-nombre">MIRANDA!</span>
+                </a>
+            </div>
+        </div>
+        <div class="wrap-cards-primeras" id="wrap-cards-rock1">
+            <div class="card-artista" id="primera">
+                <a href="paginas de artistas/airbag.html">
+                <img src="imagenes/artistas-card-airbag.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">AIRBAG</span>
+                </a>
+            </div>
+            <div class="card-artista" id="segunda">
+                <a href="paginas de artistas/almendra.html">
+                <img src="imagenes/artistas-card-almendra.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">ALMENDRA</span>
+                </a>
+            </div>
+            <div class="card-artista" id="tercera">
+                <a href="paginas de artistas/babasónicos.html">
+                <img src="imagenes/artistas-card-babasonicos.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">BABASÓNICOS</span>
+                </a>
+            </div>
+        </div>
+        <div class="wrap-cards" id="wrap-cards-rock2">
+            <div class="card-artista" id="primera">
+                <a href="paginas de artistas/bersuit.html">
+                <img src="imagenes/artistas-card-bersuit.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">BERSUIT</span>
+                </a>
+            </div>
+            <div class="card-artista" id="segunda">
+                <a href="paginas de artistas/catupecumachu.html">
+                <img src="imagenes/artistas-card-catupecumachu.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">CATUPECU MACHU</span>
+                </a>
+            </div>
+            <div class="card-artista" id="tercera">
+                <a href="paginas de artistas/ciroylospersas.html">
+                <img src="imagenes/artistas-card-ciroylospersas.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">CIRO Y LOS PERSAS</span>
+                </a>
+            </div>
+        </div>
+        <div class="wrap-cards" id="wrap-cards-rock3">
+            <div class="card-artista" id="primera">
+                <a href="paginas de artistas/indiosolari.html">
+                <img src="imagenes/artistas-card-indiosolari.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">INDIO SOLARI</span>
+                </a>
+            </div>
+            <div class="card-artista" id="segunda">
+                <a href="paginas de artistas/intoxicados.html">
+                    <img src="imagenes/artistas-card-intoxicados.png" class="card-artista-imagen">
+                    <div class="card-artista-degrade"></div>
+                    <span class="card-artista-nombre">INTOXICADOS</span>
+                    </a>
+            </div>
+            <div class="card-artista" id="tercera">
+                <a href="paginas de artistas/laspelotas.html">
+                <img src="imagenes/artistas-card-laspelotas.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">LAS PELOTAS</span>
+                </a>
+            </div>
+        </div>
+        <div class="wrap-cards-primeras" id="wrap-cards-hiphop1">
+            <div class="card-artista" id="primera">
+                <a href="paginas de artistas/duki.html">
+                <img src="imagenes/artistas-card-duki.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">DUKI</span>
+                </a>
+            </div>
+            <div class="card-artista" id="segunda">
+                <a href="paginas de artistas/elnegrotecla.html">
+                <img src="imagenes/artistas-card-elnegrotecla.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">EL NEGRO TECLA</span>
+                </a>
+            </div>
+            <div class="card-artista" id="tercera">
+                <a href="paginas de artistas/lajoaqui.html">
+                <img src="imagenes/artistas-card-lajoaqui.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">LA JOAQUI</span>
+                </a>
+            </div>
+        </div>
+        <div class="wrap-cards" id="wrap-cards-hiphop2">
+            <div class="card-artista" id="primera">
+                <a href="paginas de artistas/lali.html">
+                <img src="imagenes/artistas-card-lali.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">LALI</span>
+                </a>
+            </div>
+            <div class="card-artista" id="segunda">
+                <a href="paginas de artistas/mariabecerra.html">
+                <img src="imagenes/artistas-card-mariabecerra.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">MARIA BECERRA</span>
+                </a>
+            </div>
+            <div class="card-artista" id="tercera">
+                <a href="paginas de artistas/nickinicole.html">
+                <img src="imagenes/artistas-card-nickinicole.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">NICKI NICOLE</span>
+                </a>
+            </div>
+        </div>
+        <div class="wrap-cards" id="wrap-cards-hiphop3">
+            <div class="card-artista" id="primera">
+                <a href="paginas de artistas/trueno.html">
+                <img src="imagenes/artistas-card-trueno.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">TRUENO</span>
+                </a>
+            </div>
+            <div class="card-artista" id="segunda">
+                <a href="paginas de artistas/wos.html">
+                <img src="imagenes/artistas-card-wos.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">WOS</span>
+                </a>
+            </div>
+            <div class="card-artista" id="tercera">
+                <a href="paginas de artistas/ysya.html">
+                <img src="imagenes/artistas-card-ysya.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">YSY A</span>
+                </a>
+            </div>
+        </div>
+        <div class="wrap-cards-primeras" id="wrap-cards-pop1">
+            <div class="card-artista" id="primera">
+                <a href="paginas de artistas/agapornis.html">
+                <img src="imagenes/artistas-card-agapornis.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">AGAPORNIS</span>
+                </a>
+            </div>
+            <div class="card-artista" id="segunda">
+                <a href="paginas de artistas/bandadeturistas.html">
+                <img src="imagenes/artistas-card-bandadeturistas.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">BANDA DE TURISTAS</span>
+                </a>
+            </div>
+            <div class="card-artista" id="tercera">
+                <a href="paginas de artistas/elkuelgue.html">
+                <img src="imagenes/artistas-card-elkuelgue.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">EL KUELGUE</span>
+                </a>
+            </div>
+        </div>
+        <div class="wrap-cards" id="wrap-cards-pop2">
+            <div class="card-artista" id="primera">
+                <a href="paginas de artistas/GIT.html">
+                <img src="imagenes/artistas-card-GIT.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">GIT</span>
+                </a>
+            </div>
+            <div class="card-artista" id="segunda">
+                <a href="paginas de artistas/hijosdelsofa.html">
+                <img src="imagenes/artistas-card-hijosdelsofa.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">HIJOS DEL SOFA</span>
+                </a>
+            </div>
+            <div class="card-artista" id="tercera">
+                <a href="paginas de artistas/miranda!.html">
+                <img src="imagenes/artistas-card-miranda!.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">MIRANDA!</span>
+                </a>
+            </div>
+        </div>
+        <div class="wrap-cards" id="wrap-cards-pop3">
+            <div class="card-artista" id="primera">
+                <a href="paginas de artistas/teenangels.html">
+                <img src="imagenes/artistas-card-teenangels.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">TEENANGELS</span>
+                </a>
+            </div>
+            <div class="card-artista" id="segunda">
+                <a href="paginas de artistas/ustedseñalemelo.html">
+                <img src="imagenes/artistas-card-ustedseñalemelo.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">USTED SEÑALEMELO</span>
+                </a>
+            </div>
+            <div class="card-artista" id="tercera">
+                <a href="paginas de artistas/virus.html">
+                <img src="imagenes/artistas-card-virus.png" class="card-artista-imagen">
+                <div class="card-artista-degrade"></div>
+                <span class="card-artista-nombre">VIRUS</span>
+                </a>
             </div>
         </div>
         <footer>
-
+            <div class="bsas-toweb">
+                <img src="imagenes/footer-buenosairesciudad.png" class="footer-buenosairesciudad-logo">
+                <img src="imagenes/footer-towebs.png" class="footer-towebs-logo">
+            </div>
+            <hr>
+            <div class="socials">
+                <img src="imagenes/footer-youtube.png" class="footer-youtube-logo">
+                <img src="imagenes/footer-instagram.png" class="footer-instagram-logo">
+                <img src="imagenes/footer-facebook.png" class="footer-facebook-logo">
+            </div>
+            <span class="copyright">® 2024 - www.cmtv.com.ar. Todos los derechos reservados. </span>
         </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

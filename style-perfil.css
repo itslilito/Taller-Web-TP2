@@ -1,0 +1,155 @@
+html, body {
+    height: fit-content;
+}
+
+footer {
+    display: absolute;
+    bottom: 0;
+}
+
+.parte-arriba {
+    margin-left: 125px;
+    margin-top: 72px;
+    display: -webkit-inline-box;
+}
+
+.perfil-imagen-artista {
+    width: 396.67px;
+    height: 396.67px;
+    object-fit: cover;
+}
+
+.nombre-tags-y-bio {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-nombre {
+    font-family: Fjalla One;
+    font-size: 90.67px;
+    color: white;
+    margin-left: 30px;
+}
+
+.tag-genero1, .tag-genero2, .nacionalidad {
+    font-family: DM Sans;
+    font-size: 22.67;
+    color: #6C00C0;
+    position: relative;
+    bottom: 30px;
+    margin-right: 21px;
+    border: 10px white solid;
+    background-color: white;
+    border-radius: 37.78px;
+}
+
+.tag-genero1 {
+    margin-left: 30px;
+}
+
+.biografia {
+    font-size: 22.67px;
+    color: white;
+    font-family: DM Sans;
+    width: 697px;
+    margin-left: 30px;
+}
+
+.biografia::first-letter {
+    color: #7728B5;
+}
+
+.discografia {
+    margin-top: 100px;
+}
+
+.perfil-discos {
+    font-family: Fjalla One;
+    font-size: 75.56px;
+    color: white;
+    margin-left: 120px;
+}
+
+.tag-discos {
+    font-family: DM Sans;
+    font-size: 22.67;
+    color: white;
+    position: relative;
+    bottom: 22.67px;
+    margin-right: 21px;
+    border: 10px #222222 solid;
+    background-color: #222222;
+    border-radius: 37.78px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#sencillos-tag {
+    margin-left: 30px;
+}
+
+.sencillos, .albumes, .eps,
+.lps, .envivo, .colaboraciones {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.albumes, .eps,
+.lps, .envivo, .colaboraciones {
+    display: none;
+}
+
+.sencillos.active, .albumes.active, .eps.active,
+.lps.active, .envivo.active, .colaboraciones.active {
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-card-musica {
+    width: 236.11px;
+    height: 236.11px;
+    position: absolute;
+    margin-top: 24.4px;
+    margin-left: 49px;
+}
+
+.tipo-card-musica {
+    display: inline-block;
+    transform: rotate(180deg);
+    width: 32.11;
+    height: 237.06;
+    writing-mode: vertical-rl;
+    background-color: #2F2C2C;
+    bottom: -372;
+    margin-left: 17;
+    position: absolute;
+    text-align: -webkit-center;
+    font-size: 18.89;
+    font-family: 'DM SANS';
+    color: white;
+}
+
+.perfil-card-musica {
+    width: 268.22;
+    height: 274.83;
+}
+
+.nombre-card-musica {
+    font-family: DM Sans;
+    font-size: 22.67;
+    position: absolute;
+    background-color: #8C8272;
+    width: 268.22;
+    margin-top: 261px;
+    margin-left: 17px;
+    text-align: center;
+    color: white;
+}
+
+.zona-seleccion {
+    width: 268.22;
+    height: 305;
+    position: absolute;
+    left: 17;
+    top: 776;
+}
+
